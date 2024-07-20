@@ -1,0 +1,1 @@
+This is simple age calculater using tech stack JavaScrpit, HTML, and CSS
