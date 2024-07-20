@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Age calculator app</title>
+</head>
+
+<body>
+    <nav id="nav-uppar-part">
+        <p>
+        <h1 id="heading">Calculate Your age Here</h1>
+        </p>
+    </nav>
+    <main class="container">
+        <form class="form" novalidate>
+            <div class="date-container">
+                <label id="lbl-day" for="day">
+                    Day
+                </label>
+                <input placeholder="DD" name="day" id="day" type="datetime">
+                <p class="error-text error-day hidden">
+                    This field is required
+                </p>
+            </div>
+            <div class="date-container">
+                <label id="lbl-month" for="month">
+                    Month
+                </label>
+                <input placeholder="MM" name="month" id="month" type="datetime">
+                <p class="error-text error-month hidden">
+                    This field is required
+                </p>
+            </div>
+            <div class="date-container">
+                <label id="lbl-year" for="year">
+                    Year
+                </label>
+                <input placeholder="YYYY" name="year" id="year" type="datetime">
+                <p class="error-text error-year hidden">
+                    This field is required
+                </p>
+            </div>
+        </form>
+        <div class="image">
+            <img class="icon" id="submit" src="./assets/images/icon-arrow.svg" alt="icon-arrow">
+            <p class="line"></p>
+        </div>
+        <section class="results">
+            <h3 class="result">
+                <span class="result-years">--</span> years
+            </h3>
+            <h3 class="result">
+                <span class="result-months">--</span> months
+            </h3>
+            <h3 class="result">
+                <span class="result-days">--</span> days
+            </h3>
+        </section>
+    </main>
+
+    <script src="index.js"> </script>
+</body>
+
+</html>
